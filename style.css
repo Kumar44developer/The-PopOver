@@ -8,4 +8,6 @@ margin-top: 50px;
   
  .popover {
     display: none;
-    position: absolute;
+    position: absolute
+     width: 250px;
+    padding: 10px;;
