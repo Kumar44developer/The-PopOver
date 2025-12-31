@@ -7,3 +7,7 @@ myBtn.addEventListener("click", function() {
 
       });
  closeBtn.addEventListener("click", function() {
+
+        myPopover.classList.remove("active");
+
+      });
