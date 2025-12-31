@@ -6,3 +6,4 @@ myBtn.addEventListener("click", function() {
  myPopover.classList.add("active");
 
       });
+ closeBtn.addEventListener("click", function() {
