@@ -34,6 +34,8 @@ margin-top: 50px;
     cursor: pointer;
   }
 
-
+.btn:hover {
+    background-color: #303f9f;
+  }
 
 
