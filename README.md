@@ -93,13 +93,13 @@ Trigger Click             Click Outside             ESC Key
 
 ```
 project Number7/
-├── index.html                 # Interactive showcase page with accessible markup
-├── style.css                  # Modern layout, arrow pseudo-elements, and transitions
-├── script.js                  # Popover controller, light-dismiss, and keyboard listeners
+├── index.html                 
+├── style.css                 
+├── script.js                
 ├── tests/
-│   └── test_popover.js        # Automated unit tests for Popover state logic
-├── .gitignore                 # Excluded environments and temporary files
-└── README.md                  # Project documentation
+│   └── test_popover.js       
+├── .gitignore                 
+└── README.md                  
 ```
 
 ---
