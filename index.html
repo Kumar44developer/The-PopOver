@@ -4,20 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Popover</title>
+    <title>The Popover — Interactive Popover Component</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="showcase-card">
+        <h1>The Popover Component</h1>
+        <p class="subtitle">A lightweight, accessible, zero-dependency popover utility</p>
 
-<button class="btn" id="myBtn">Click Me!</button>
-    <div class="popover" id="myPopover">
-        <div class="popover-inner">
+        <div class="placement-controls">
+            <button type="button" class="placement-btn active" data-placement="bottom" onclick="setPlacement('bottom')">Bottom</button>
+            <button type="button" class="placement-btn" data-placement="top" onclick="setPlacement('top')">Top</button>
+        </div>
 
-             <h3>My Popover</h3>
-        <p>This some Randome Text That is Used Here</p>
-       </div>
- <button class="btn" id="closeBtn">Close</button>
+        <div class="popover-wrapper">
+            <button class="btn" id="myBtn" aria-haspopup="dialog" aria-expanded="false">Click Me!</button>
+            <div class="popover popover-bottom" id="myPopover" role="dialog" aria-labelledby="popoverTitle">
+                <div class="popover-inner">
+                    <div class="popover-header">
+                        <h3 id="popoverTitle">Interactive Popover</h3>
+                        <span class="badge">Active</span>
+                    </div>
+                    <p>This popover is fully accessible with keyboard navigation, light-dismiss, and directional arrow pointers.</p>
+                    <div class="popover-footer">
+                        <button class="btn btn-secondary" id="closeBtn">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="info-note">Tip: Press <span class="kbd">ESC</span> or click outside to close</p>
     </div>
-  <script src="script.js"></script>   
+
+    <script src="script.js"></script>
 </body>
-</html>   
+</html>
